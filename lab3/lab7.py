@@ -44,7 +44,7 @@ class ReconciledFlow(BaseModel):
 class NodeError(BaseModel):
     node: str
     error_type: str
-    imbalance_value: float
+    imbalance_value: Optional[float] = None
 
 # Модель результата глобального теста
 class GlobalTestResult(BaseModel):
